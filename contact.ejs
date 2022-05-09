@@ -1,0 +1,41 @@
+<%- include("partials/header") -%>
+<div class="initialText">
+<h2>Ai nevoie de personal asiatic pentru compania ta?</h2>
+<h3>Hai să discutăm despre nevoile tale pentru a găsi soluții concrete!</h3>
+</div>
+<form  action="/contact" method="POST">
+
+<div class="contactArea">
+  <div class="form-floating mb-3">
+    <label for="floatingInput">Nume și Prenume</label>
+  <input type="text" name="name" class="form-control" id="floatingInput" placeholder="Nume și Prenume">
+
+</div>
+<div class="form-floating">
+  <label for="floatingPassword">Email</label>
+  <input type="email" name="email" class="form-control" id="floatingPassword" placeholder="Email">
+</div>
+<div class="form-floating">
+  <label for="floatingPassword">Număr de telefon</label>
+  <input type="tel" name="phone" class="form-control" id="floatingPhone" placeholder="Telefon">
+</div>
+
+<div class="form-floating">
+  <label for="floatingTextarea">Subiect</label>
+  <textarea class="form-control" name="subject" placeholder="Subiect" id="floatingTextarea"></textarea>
+</div>
+<div class="form-floating">
+  <label for="floatingTextarea2">Mesajul tău</label>
+  <textarea class="form-control" name="message" placeholder="Lasă mesajul tău aici" id="floatingTextarea2" style="height: 100px"></textarea>
+</div>
+<div class="form-floating">
+<input type="radio" name="gdpr"> Acord GDPR</input>
+</div>
+<input type="submit" value="Submit">
+</div>
+</form>
+<div class="footer">
+
+
+<%- include("partials/footer") -%>
+</div>
